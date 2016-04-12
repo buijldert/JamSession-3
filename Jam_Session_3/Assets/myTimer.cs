@@ -49,6 +49,7 @@ public class myTimer : MonoBehaviour
         if (myTimer2 == 0)
         {
             timertext.enabled = false;
+            playerMovement.canMove = true;
             Player2Movement.speed2 = .2f;
             playerMovement.speed = .2f;
         }
