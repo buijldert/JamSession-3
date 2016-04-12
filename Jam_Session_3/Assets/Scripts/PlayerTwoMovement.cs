@@ -8,39 +8,25 @@ public class PlayerTwoMovement : MonoBehaviour {
     void Update()
     {
 
-        //if (Input.GetKey(KeyCode.RightArrow))
-        //{
-         //   transform.Translate(Vector2.right * speed2);
-        //}
-
-        //if (Input.GetKey(KeyCode.LeftArrow))
-        //{
-            //transform.Translate(-Vector2.right * speed2);
-        //}
-
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector2.up * speed2);
+            transform.Translate(Vector2.right * speed2);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-Vector2.up * speed2);
+            transform.Translate(Vector2.left * speed2);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            // Clockwise
-            transform.Rotate(0, 0, -4.0f); // --> Instead of "transform.Rotate(-1.0f, 0.0f, 0.0f);"
+            transform.Translate(Vector2.up * speed2);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            // Counter-clockwise
-            transform.Rotate(0, 0, 4.0f); // --> Instead of transform.Rotate(1.0f, 0.0f, 0.0f);
+            transform.Translate(Vector2.down * speed2);
         }
-
-
 
     }
 }
