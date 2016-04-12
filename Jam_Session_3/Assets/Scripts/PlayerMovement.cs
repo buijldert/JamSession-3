@@ -1,12 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-<<<<<<< HEAD:Jam_Session_3/Assets/playerMovement.cs
-public class playerMovement : MonoBehaviour
-{
-=======
 public class PlayerMovement : MonoBehaviour {
->>>>>>> origin/master:Jam_Session_3/Assets/Scripts/PlayerMovement.cs
 
     public static float speed;
     public static bool canMove = false;
