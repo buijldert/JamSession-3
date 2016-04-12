@@ -14,7 +14,7 @@ public class MyTimer : MonoBehaviour
     void Start()
     {
         timertext = GetComponent<Text>();
-        Player2Movement.speed2 = 0;
+        PlayerTwoMovement.speed2 = 0;
         PlayerMovement.speed = 0;
         StartCoroutine(timerfunction());
     }
@@ -49,7 +49,7 @@ public class MyTimer : MonoBehaviour
         if (myTimer2 == 0)
         {
             timertext.enabled = false;
-            Player2Movement.speed2 = .2f;
+            PlayerTwoMovement.speed2 = .2f;
             PlayerMovement.speed = .2f;
         }
        

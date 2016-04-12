@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player2Movement : MonoBehaviour {
+public class PlayerTwoMovement : MonoBehaviour {
 
     public static float speed2;
 
