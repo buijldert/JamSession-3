@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class myTimer : MonoBehaviour
+public class MyTimer : MonoBehaviour
 {
 
 
@@ -15,7 +15,7 @@ public class myTimer : MonoBehaviour
     {
         timertext = GetComponent<Text>();
         Player2Movement.speed2 = 0;
-        playerMovement.speed = 0;
+        PlayerMovement.speed = 0;
         StartCoroutine(timerfunction());
     }
 
@@ -49,8 +49,9 @@ public class myTimer : MonoBehaviour
         if (myTimer2 == 0)
         {
             timertext.enabled = false;
+            playerMovement.canMove = true;
             Player2Movement.speed2 = .2f;
-            playerMovement.speed = .2f;
+            PlayerMovement.speed = .2f;
         }
        
 
