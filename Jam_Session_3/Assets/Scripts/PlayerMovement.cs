@@ -44,6 +44,10 @@ public class PlayerMovement : MonoBehaviour {
             {
                 SpeedDown();
             }
+            if (other.tag == "Slow")
+            {
+                SpeedDown();
+            }
         }
     }
     void Speedup()
