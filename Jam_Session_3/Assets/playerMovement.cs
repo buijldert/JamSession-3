@@ -18,17 +18,27 @@ public class playerMovement : MonoBehaviour {
             transform.Translate(-Vector2.right * speed);
         }
 
+        //if (Input.GetKey(KeyCode.W))
+        //{
+          //  transform.Translate(Vector2.up * speed);
+       // }
+
+        // if (Input.GetKey(KeyCode.S))
+       // {
+        //    transform.Translate(-Vector2.up * speed);
+       //    }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            // Clockwise
+            transform.Rotate(0, 0, -3.0f); // --> Instead of "transform.Rotate(-1.0f, 0.0f, 0.0f);"
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector2.up * speed);
+            // Counter-clockwise
+            transform.Rotate(0, 0, 3.0f); // --> Instead of transform.Rotate(1.0f, 0.0f, 0.0f);
         }
-
-         if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(-Vector2.up * speed);
-        }
-
-
 
     }
 }
