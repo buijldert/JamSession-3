@@ -50,7 +50,7 @@ public class MyTimer : MonoBehaviour
         {
             timertext.enabled = false;
             PlayerTwoMovement.speed2 = .2f;
-            PlayerMovement.canMove = true;
+            ChangeSpeed.canMove = true;
             PlayerMovement.speed = .2f;
         }
        

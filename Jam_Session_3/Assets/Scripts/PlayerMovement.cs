@@ -4,8 +4,12 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     public static float speed;
-    public static bool canMove = false;
+    private Vector2 _startPos;
 
+    void Start()
+    {
+        _startPos = this.transform.position;
+    }
 
     void Update()
     {
@@ -29,35 +33,13 @@ public class PlayerMovement : MonoBehaviour {
         {
             transform.Translate(-Vector2.up * speed);
         }
-
-
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (canMove == true)
+        if (other.tag == "player2")
         {
-            if (other.tag == "speed")
-            {
-                Speedup();
-            }
-            if (other.tag == "Ground")
-            {
-                SpeedDown();
-            }
-            if (other.tag == "Slow")
-            {
-                SpeedDown();
-            }
+            transform.position = _startPos;
         }
-    }
-    void Speedup()
-    {
-        speed = .4f;
-        Debug.Log("SpeedUp");
-    }
-    void SpeedDown()
-    {
-        speed = .2f;
-        Debug.Log("SpeedDown");
     }
 }

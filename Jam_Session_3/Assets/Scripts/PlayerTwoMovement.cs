@@ -4,6 +4,12 @@ using System.Collections;
 public class PlayerTwoMovement : MonoBehaviour {
 
     public static float speed2;
+    private Vector2 _startPos;
+
+    void Start()
+    {
+        _startPos = this.transform.position;
+    }
 
     void Update()
     {
@@ -28,5 +34,13 @@ public class PlayerTwoMovement : MonoBehaviour {
             transform.Translate(Vector2.down * speed2);
         }
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "player1")
+        {
+            transform.position = _startPos;
+        }
     }
 }
