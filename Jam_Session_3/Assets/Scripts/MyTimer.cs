@@ -23,19 +23,6 @@ public class MyTimer : MonoBehaviour
     void Update()
     {
         timertext.text = "" + myTimer2;
-
-        if (myTimer2 >0)
-        {
-
-
-            
-            
-
-
-
-        }
-
-
     }
 
     IEnumerator timerfunction()
@@ -49,13 +36,10 @@ public class MyTimer : MonoBehaviour
         if (myTimer2 == 0)
         {
             timertext.enabled = false;
-            PlayerTwoMovement.speed2 = .2f;
             ChangeSpeed.canMove = true;
+            PlayerTwoMovement.speed2 = .2f;
             PlayerMovement.speed = .2f;
         }
-       
-
-
-
+      
     }
 }
