@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TestScenes/merlijn_testscene.unity
+- path: Assets/Scenes/EndScreenyellow.unity
   isLoaded: 1
   isActive: 1
