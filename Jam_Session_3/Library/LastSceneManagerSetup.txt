@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/menu.unity
+=======
+- path: Assets/TestScenes/merlijn_testscene.unity
+>>>>>>> origin/master
   isLoaded: 1
   isActive: 1
